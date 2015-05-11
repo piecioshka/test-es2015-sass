@@ -4,6 +4,7 @@
   "devDependencies": {
     "del": "latest",
     "gulp": "latest",
+    "gulp-help": "latest",
     "gulp-babel": "latest",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest"

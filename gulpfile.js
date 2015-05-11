@@ -8,6 +8,10 @@
     var babel = require('gulp-babel');
     var sourcemaps = require('gulp-sourcemaps');
 
+    // Print list of tasks.
+    require('gulp-help')(gulp);
+
+    // Dictionary with all paths to assets.
     var paths = {
         styles: {
             sass_files: [
@@ -28,7 +32,7 @@
 
     // -----------------------------------------------------------------------
 
-    gulp.task('sass', function () {
+    gulp.task('sass', 'Compile *.scss files to *.css.', function () {
         del(paths.styles.css_directory, function () {
             gulp.src(paths.styles.sass_files)
                 .pipe(sourcemaps.init())
@@ -38,7 +42,7 @@
         });
     });
 
-    gulp.task('es6', function () {
+    gulp.task('es6', 'Compile all JS files with ES6 to regular ES5 files.', function () {
         del(paths.scripts.bundle, function () {
             gulp.src(paths.scripts.main)
                 .pipe(sourcemaps.init())
@@ -50,11 +54,11 @@
 
     // -----------------------------------------------------------------------
 
-    gulp.task('watch:styles', ['sass'], function () {
+    gulp.task('watch:styles', 'Listen for modify *.scss and compile.', ['sass'], function () {
         gulp.watch(paths.styles.sass_files, ['sass']);
     });
 
-    gulp.task('watch:scripts', ['es6'], function () {
+    gulp.task('watch:scripts', 'Listen for modify *.js (ES6) and compile.', ['es6'], function () {
         gulp.watch(paths.scripts.files, ['es6']);
     });
 

@@ -3,6 +3,16 @@
 Example of test application.
 
 
+## Start
+
+Some commands to launch project on web browser:
+
+```
+git clone ...
+npm install
+gulp sass es6
+```
+
 ## Technical description
 
 Tried to create dummy project with `ECMAScript 6` with `Sass`.
