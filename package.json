@@ -1,0 +1,11 @@
+{
+  "name": "test-es6-sass",
+  "private": true,
+  "devDependencies": {
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-babel": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest"
+  }
+}

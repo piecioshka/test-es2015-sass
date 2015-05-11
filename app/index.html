@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test-es6-sass</title>
+    <link rel="stylesheet" href="styles/css/main.css"/>
+</head>
+<body>
+    <script src="scripts/vendor/babel/babel-4.6.6.min.js"></script>
+    <script src="scripts/vendor/es6-module-loader/es6-module-loader.js"></script>
+    <script>
+        System.transpiler = 'babel';
+        System.paths['*'] = 'scripts/*.js';
+        System.import('core/main');
+    </script>
+
+    <!--<script src="scripts/bundle/main.js"></script>-->
+</body>
+</html>
