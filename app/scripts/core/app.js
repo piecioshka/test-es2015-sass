@@ -1,9 +1,9 @@
-function Application() {
-    this.initialize();
-}
+'use strict';
 
-Application.prototype.initialize = function () {
-    console.log('new Application');
-};
+class Application {
+    constructor() {
+        console.log('Hello world!');
+    }
+}
 
 export default Application;
