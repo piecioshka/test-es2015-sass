@@ -1,4 +1,5 @@
-/node_modules/
-/npm-debug.log
-/app/scripts/bundle/
-/app/styles/css/
+node_modules/
+npm-debug.log
+
+app/scripts/bundle/
+app/styles/css/
