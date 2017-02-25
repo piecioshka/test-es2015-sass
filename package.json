@@ -1,5 +1,5 @@
 {
-  "name": "test-es6-sass",
+  "name": "test-es2015-sass",
   "private": true,
   "devDependencies": {
     "del": "latest",
