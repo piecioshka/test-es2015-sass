@@ -42,7 +42,7 @@
         });
     });
 
-    gulp.task('es6', 'Compile all JS files with ES6 to regular ES5 files.', function () {
+    gulp.task('es2015', 'Compile all JS files with ES2015 to regular ES5 files.', function () {
         del(paths.scripts.bundle, function () {
             gulp.src(paths.scripts.main)
                 .pipe(sourcemaps.init())
@@ -58,8 +58,8 @@
         gulp.watch(paths.styles.sass_files, ['sass']);
     });
 
-    gulp.task('watch:scripts', 'Listen for modify *.js (ES6) and compile.', ['es6'], function () {
-        gulp.watch(paths.scripts.files, ['es6']);
+    gulp.task('watch:scripts', 'Listen for modify *.js (ES2015) and compile.', ['es2015'], function () {
+        gulp.watch(paths.scripts.files, ['es2015']);
     });
 
 }());
