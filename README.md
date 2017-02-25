@@ -1,16 +1,15 @@
-# test-es6-sass
+# test-es2015-sass
 
-Example of test application.
-
+> :ledger: Example of test application.
 
 ## Start
 
 Some commands to launch project on web browser:
 
 ```
-git clone ...
-npm install
-gulp sass es6
+$ git clone git@github.com:piecioshka/dm-es6-app-seed.git
+$ npm install
+$ gulp sass es2015
 ```
 
 ## Technical description
